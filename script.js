@@ -5,6 +5,9 @@ button.addEventListener('click', function() {
     for (let index = 0; index < 100; index++) {
         const actualCell = createElement('div', 'cell');
         gridElement.appendChild(actualCell);
+        actualCell.addEventListener('click', function(){
+            actualCell.classList.toggle('selected');
+        });
     }
 })
 
@@ -13,5 +16,6 @@ function createElement(tagName, className){
     cellElement.className = className;
     return cellElement;
 }
+
 
 

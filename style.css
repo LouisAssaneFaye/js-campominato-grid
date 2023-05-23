@@ -37,6 +37,8 @@ div.cell{
     width: calc( 100% / 10);
     height: calc( 700px / 10);
     border: 3px solid black;
+    line-height: calc( 700px / 10);
+    text-align: center;
 }
 
 div.cell.selected{
