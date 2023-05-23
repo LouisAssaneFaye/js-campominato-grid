@@ -9,6 +9,7 @@ button.addEventListener('click', function() {
             actualCell.classList.toggle('selected');
         });
     }
+    button.className = 'disabled';
 })
 
 function createElement(tagName, className){
