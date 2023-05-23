@@ -5,10 +5,15 @@ button.addEventListener('click', function() {
     for (let index = 0; index < 100; index++) {
         const actualCell = createElement('div', 'cell');
         gridElement.appendChild(actualCell);
+        actualCell.innerHTML = String(index + 1);
         actualCell.addEventListener('click', function(){
-            actualCell.classList.toggle('selected');
+        actualCell.classList.toggle('selected');
+        console.log(String(index + 1));
         });
     }
+     
+
+    
     button.className = 'disabled';
 })
 
@@ -17,6 +22,4 @@ function createElement(tagName, className){
     cellElement.className = className;
     return cellElement;
 }
-
-
 
