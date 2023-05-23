@@ -3,3 +3,46 @@
     margin: 0;
     padding: 0;
 }
+
+main{
+    background-color: rgb(123, 255, 123);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+}
+ 
+button{
+    width: 7rem;
+    margin-right: 5px;
+ }
+ 
+ h1{
+    margin-left: 5px;
+ }
+
+ div.grid{
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.grid.cell{
+    width: calc( 100% / 10);
+    height: calc( 100% / 10);
+    cursor: help;
+}
+
+
+div.grid,div.grid.cell{
+    border: 3px solid black;
+}
+div.grid .cell.selected{
+    background-color: #7ffed3;
+}
