@@ -31,18 +31,15 @@ button{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-}
-
-div.grid.cell{
-    width: calc( 100% / 10);
-    height: calc( 100% / 10);
-    cursor: help;
-}
-
-
-div.grid,div.grid.cell{
     border: 3px solid black;
 }
-div.grid .cell.selected{
-    background-color: #7ffed3;
+
+div.cell{
+    width: calc( 100% / 10);
+    height: calc( 700px / 10);
+    border: 3px solid black;
+}
+
+div.cell.selected{
+    background-color: rgb(0, 225, 255);
 }

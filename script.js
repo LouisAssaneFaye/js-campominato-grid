@@ -1,9 +1,10 @@
 const gridElement = document.getElementById('grid');
+const button = document.querySelector('button.button');
 
-Button.addEventListener('click', function(){
+button.addEventListener('click', function() {
     for (let index = 0; index < 100; index++) {
         const actualCell = createElement('div', 'cell');
-        gridElement.appendChild(createElement('div', 'cell'))
+        gridElement.appendChild(actualCell);
     }
 })
 
@@ -12,4 +13,5 @@ function createElement(tagName, className){
     cellElement.className = className;
     return cellElement;
 }
+
 
